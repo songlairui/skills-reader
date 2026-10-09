@@ -4,6 +4,22 @@ A small macOS/desktop reader for agent skills in `~/.agents/skills`, built with 
 
 用 MyGo 写的桌面应用，阅读 `~/.agents/skills` 下的 agent skills：按来源分组、舒服的 Markdown 排版、友好的 frontmatter 卡片，并沿用 [vercel-labs/skills](https://github.com/vercel-labs/skills) CLI 的 `.skill-lock.json` 做索引版本与更新检查。
 
+## Screenshots
+
+> 截图由真实运行中的应用导出页面后渲染（无 macOS 原生标题栏）。
+
+**frontmatter 卡片 + 来源与索引（暗色）**
+
+![frontmatter card, dark](docs/screenshots/frontmatter-dark.png)
+
+**中文排版 · 软链 skill 的仓库信息（暗色）**
+
+![CJK typography and linked skill, dark](docs/screenshots/cjk-linked-dark.png)
+
+**表格与目录（亮色）**
+
+![tables and TOC, light](docs/screenshots/tables-light.png)
+
 ## 运行
 
 需要 Go（go.mod 要求 1.27.1，较旧的 Go 会由 `GOTOOLCHAIN=auto` 自动拉取）和 Bun。
