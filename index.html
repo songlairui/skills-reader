@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skills Reader</title>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <aside class="sidebar">
+        <div class="side-head drag">
+          <div class="brand">
+            <span class="brand-name">Skills</span>
+            <span class="brand-count" id="count"></span>
+          </div>
+        </div>
+        <div class="side-tools">
+          <label class="search">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M7 2.5a4.5 4.5 0 1 0 2.9 7.94l2.83 2.83.7-.7-2.83-2.83A4.5 4.5 0 0 0 7 2.5Zm-3.5 4.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0Z"/></svg>
+            <input id="q" type="search" placeholder="搜索名称、描述、来源…  ⌘K" autocomplete="off" spellcheck="false" />
+          </label>
+          <div class="seg" id="groupMode" role="tablist" aria-label="分组方式">
+            <button data-mode="source" class="on">按来源</button>
+            <button data-mode="prefix">按前缀</button>
+            <button data-mode="flat">平铺</button>
+          </div>
+          <div class="filters" id="filters"></div>
+        </div>
+        <nav class="list" id="list" aria-label="skills"></nav>
+        <footer class="side-foot" id="foot"></footer>
+      </aside>
+      <main class="main">
+        <header class="topbar drag" id="topbar"></header>
+        <div class="scroller" id="scroller">
+          <div class="page" id="page"></div>
+        </div>
+      </main>
+    </div>
+    <div class="toast" id="toast" role="status"></div>
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>

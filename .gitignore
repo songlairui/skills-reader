@@ -1,0 +1,15 @@
+# deps & builds
+node_modules/
+/dist/
+/build/
+/.mygo/
+mygo_windows_*.syso
+
+# local-only: scratch/probe output, kickoff notes, env
+.scratch/
+docs/kickoff/
+.env
+.env.*
+.DS_Store
+*.log
+*.tgz
