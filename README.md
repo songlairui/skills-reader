@@ -1,3 +1,5 @@
+<p align="center"><img src="docs/assets/icon.png" width="128" height="128" alt="Skills Reader icon"></p>
+
 # Skills Reader
 
 A small macOS/desktop reader for agent skills in `~/.agents/skills`, built with [MyGo](https://mygo.egoist.dev) ([egoist/mygo](https://github.com/egoist/mygo)) — Go backend + web frontend in the system webview.
@@ -6,7 +8,11 @@ A small macOS/desktop reader for agent skills in `~/.agents/skills`, built with 
 
 ## Screenshots
 
-> 截图由真实运行中的应用导出页面后渲染（无 macOS 原生标题栏）。
+**macOS 原生窗口**
+
+![Skills Reader on macOS](docs/screenshots/native-macos.png)
+
+> 以下三张由真实运行中的应用导出页面后渲染（无 macOS 原生标题栏）。
 
 **frontmatter 卡片 + 来源与索引（暗色）**
 
